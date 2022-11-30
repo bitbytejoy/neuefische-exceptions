@@ -15,7 +15,7 @@ class MainTest {
             Main.iFail();
             Assertions.fail();
         } catch (ArithmeticException e) {
-            Assertions.assertTrue(true);
+            Assertions.assertEquals("asdf", e.getMessage());
         }
     }
 }
